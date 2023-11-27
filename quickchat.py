@@ -24,7 +24,7 @@ class Args:
     """the stop sequences to use"""
     slurm_template_path: str = "tgi_template.slurm"
     """Slurm template file path"""
-    manage_tgi_instances: bool = True
+    manage_tgi_instances: bool = False
     """Spin up and terminate TGI instances when the generation is done"""
     endpoint: str = ""
     """TGI endpoint"""

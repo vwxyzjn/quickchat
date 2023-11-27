@@ -1,6 +1,6 @@
 # quickchat
 
-A simple cli to chat with HF models, using TGI, gradio, and slurm. The CLI automatically spins up a tgi instance via slurm and then opens a gradio interface to chat with the model.
+A simple cli to chat with HF models, using [TGI](https://github.com/huggingface/text-generation-inference.git), gradio, and slurm. The CLI automatically spins up a tgi instance via slurm and then opens a gradio interface to chat with the model.
 
 ### Chat with models
 
@@ -8,11 +8,13 @@ Modify `tgi_template.slurm` to use your own slurm account. Then run the followin
 
 ```shell
 pip install -e . # or `poetry install`
-python quickchat.py --model mistralai/Mistral-7B-Instruct-v0.1 --revision main
+
+# use the public tgi instance
+python quickchat.py  --endpoint https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1
+
+# spin up your own tgi instance via slurm
+python quickchat.py --manage_tgi_instances --model mistralai/Mistral-7B-Instruct-v0.1 --revision main
 ```
-
-
-
 
 https://github.com/vwxyzjn/quickchat/assets/5555347/8b561a52-1bdc-48f0-bb36-6d39836c061b
 
