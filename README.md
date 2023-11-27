@@ -18,4 +18,6 @@ python quickchat.py --manage_tgi_instances --model mistralai/Mistral-7B-Instruct
 
 https://github.com/vwxyzjn/quickchat/assets/5555347/8b561a52-1bdc-48f0-bb36-6d39836c061b
 
+### Why
 
+There are already pretty good solutions like [FastChat](https://github.com/lm-sys/FastChat). This repo is a simpler alternative with minimal code allowing researchers to customize and quickly spin up their own tgi instances and chat with them.
