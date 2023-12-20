@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.9"
 gradio = "^4.7.1"
 huggingface-hub = "^0.19.4"
-transformers = "^4.35.2"
+transformers = "^4.36.0"
 
 
 [build-system]
